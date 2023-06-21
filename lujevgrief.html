@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css.css">
+    <title>Правила</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-menu">
+            <ul class="menu-list">
+              <li><a href="./index.html">Главная</a></li>
+              <li><a href="/rules.html">Правила</a></li>
+              <li class="dropdown">
+                <a href="#">Сервера</a>
+                <ul class="submenu">
+                  <li><a href="./lujevgrief.html">LujevGrief</a></li>
+                  <li><a href="./lujevgrief.html">LujevMagic</a></li>
+                  <li><a href="./lujevgrief.html">LujevTechno</a></li>
+                  <li><a href="./lujevgrief.html">LujevSky</a></li>
+                </ul>
+              </li>
+              <li><a href="./lujevgrief.html">Контакты</a></li>
+            </ul>
+          </nav>
+    </header>
+<main>
+<img src="https://aidt.ru/images/underconstr.png">
+</main>
+<footer>
+    <ul class="right-menu">
+        <li><a class="footericon" href="https://www.youtube.com/@lujev"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png " width="35px"></a></li>
+        <li><a class="footericon" href="https://vk.com/lujevmine"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968835.png" width="35px"></a></li>
+        <li><a class="footericon" href="https://vk.com/away.php?to=https%3A%2F%2Fdiscord.gg%2FQnbTGxHhvb&post=-216955426_13&cc_key="><img src="https://cdn-icons-png.flaticon.com/128/3670/3670157.png" width="35px"></a></li>
+      </ul>
+</footer>
+    <script>
+// Находим текущую страницу .шапка
+const currentPage = window.location.href;
+
+// Находим все ссылки в меню
+const menuLinks = document.querySelectorAll('.menu-list li a');
+
+// Добавляем класс 'active' ссылке текущей страницы, чтобы подчеркнуть, что это текущая страница
+menuLinks.forEach(link => {
+  if (link.href === currentPage) {
+    link.classList.add('active');
+  }
+});
+    </script>
+</body>
+</html>
