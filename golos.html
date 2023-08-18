@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css.css">
+    <title>Голосование</title>
+</head>
+<body>
+  <header>
+    <nav class="nav-menu">
+        <ul class="menu-list">
+          <li><a href="./index.html">Главная</a></li>
+          <li class="dropdown"><a href="#">Сервера</a>
+            <ul class="submenu">
+              <li><a href="./lujevgrief.html">LexusCraft [Magic]</a></li>
+              <li><a href="#">LujevSky  <br>[в разработке]</a></li>
+              <li><a href="#">LujevTechno <br>[в разработке]</a></li>
+              <li><a href="#">LujevGrief <br>[в разработке]</a></li>
+              <li><a href="#">LujevGalaxy <br>[в разработке]</a></li>
+            </ul>
+          <li><a href="./rules.html">Правила</a></li>
+          <li><a href="./golos.html">Голосовать</a></li>
+          </li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="https://shop.lujevgrief.ru/">Магазин</a></li>
+        </ul>
+      </nav>
+      <li class="start"><a href="https://disk.yandex.ru/d/MHIvVa_J-LBP4w">Начать играть</a></li>
+</header>
+<main>
+  <div class="predpost">
+Голосовать за сервер
+  </div>
+<div class="newspost">
+  <a href="https://minecraftrating.ru/vote/198574/" onclick="window.open( 'https://minecraftrating.ru/vote/198574/' ); return false;"><img src="//minecraftrating.ru/templates/theme/images/widgets/widget_vote.png" alt="Голосовать за сервер LexusCraft" title="Голосовать за сервер LexusCraft" width="88" height="31" /></a>
+  <a href="https://misterlauncher.org/vote/27852/" target="_blank"><img src="//misterlauncher.org/images/widgets/vote.png" alt="Голосовать за сервер LexusCraft" title="Голосовать за сервер LexusCraft" width="88" height="31" /></a>
+  <a href="https://minecraftmonitoring.com/server/11355"><img v-lazy-load data-src="https://minecraftmonitoring.com/buttons/1.jpg" alt="Голосовать" title="Голосовать за сервер 188.255.118.180" width="88" height="31"></a>
+</div>
+</main>
+<footer>
+  <ul class="right-menu">
+      <li><a class="footericon" href="https://www.youtube.com/@lujev"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png " width="35px"></a></li>
+      <li><a class="footericon" href="https://vk.com/lujevmine"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968835.png" width="35px"></a></li>
+      <li><a class="footericon" href="https://vk.com/away.php?to=https%3A%2F%2Fdiscord.gg%2FQnbTGxHhvb&post=-216955426_13&cc_key="><img src="https://cdn-icons-png.flaticon.com/128/3670/3670157.png" width="35px"></a></li>
+    </ul>
+</footer>
+    <script>
+// Находим текущую страницу .шапка
+const currentPage = window.location.href;
+
+// Находим все ссылки в меню
+const menuLinks = document.querySelectorAll('.menu-list li a');
+
+// Добавляем класс 'active' ссылке текущей страницы, чтобы подчеркнуть, что это текущая страница
+menuLinks.forEach(link => {
+  if (link.href === currentPage) {
+    link.classList.add('active');
+  }
+});
+    </script>
+</body>
+</html>
